@@ -1,0 +1,22 @@
+{
+   "content_scripts": [ {
+      "css": [ "styles.css", "tipped.css" ],
+      "js": [ "jquery-1.9.1.js", "spinners.min.js", "tipped.js", "script.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_end"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+   "description": "Get your news, faster.",
+   "icons": {
+      "128": "icon128.png",
+      "16": "icon16.png",
+      "48": "icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlNlBSbFjQ9bxa0hftzWy9Da6OY78dwvGiCDSwAH71HK7vFM/nIwuKKTZW9DUCVDbaCGnQ2BM96ojUs4Cq0gq3ov2EssGZSKhfuRtzNASnLmJnjTxZnMquMCuS+bwDVSg4qZXK7lHSoUQwAk2q0OoOVxs8uNi6PHss+bY7EXrt7BV0mMDzbR+M2utRhcFsEWYD9e1RDuznhmn2wDPiqbdPqpLEycQ/b6I/+NDqEYn2g830KdxJiA++oTOD7XqsdnA+Mro2iyNbhMSdSghm7dLzo4VFZYNcit8xsPP6JI8D4sgWHAFgrVYfBd3Ib4JK1iq0MIXTUwf3cYQuT4IZZ8ooQIDAQAB",
+   "manifest_version": 2,
+   "name": "Quink",
+   "permissions": [ "http://nicholasrub.in/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.95",
+   "web_accessible_resources": [ "HelveticaNeue-Bold.otf", "helveticaneuelight.ttf" ]
+}
